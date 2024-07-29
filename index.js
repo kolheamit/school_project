@@ -20,4 +20,4 @@ app.use(session(
 app.use("/", user_route);
 app.use("/admin", admin_route);
 
-app.listen(1000);
+app.listen(3306);
