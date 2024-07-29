@@ -1,0 +1,87 @@
+<%- include("navbar.ejs") %>
+<link rel="stylesheet" href="style/Contact.css" />
+<link rel="stylesheet" href="style/index.css" />
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 header"></div>
+  </div>
+</div>
+
+<div class="container contact-slide">
+  <div class="row">
+    <div class="col-md-12 school">
+      <h2>Join With Us</h2>
+      <div class="line"></div>
+      <p class="mt-3">
+        Welcome to our contact page! We value your feedback, inquiries, and
+        suggestions. Whether you have a question about our products or services,
+        need technical support, or want to share your thoughts with us, we're
+        here to listen.
+      </p>
+    </div>
+  </div>
+  <div class="row contact-slide-icon">
+    <div class="col-md-3">
+      <ion-icon name="location-outline"></ion-icon>
+      <p>Address: 198 West 21th Street, Suite 721 New York NY 10016</p>
+    </div>
+    <div class="col-md-3">
+      <ion-icon name="mail-outline"></ion-icon>
+      <p>Phone: + 1235 2355 98</p>
+    </div>
+    <div class="col-md-3">
+      <ion-icon name="call-outline"></ion-icon>
+      <p>Email: info@yoursite.com</p>
+    </div>
+    <div class="col-md-3">
+      <ion-icon name="earth-outline"></ion-icon>
+      <p>Website yoursite.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="container contact-slide-2">
+  <div class="row contact-input">
+    <div class="col-md-7">
+      <div class="row p-2">
+        <div class="col-md-12">
+          <h2>Contact Us</h2>
+          <div class="line mb-4"></div>
+        </div>
+        <div class="col-md-12">
+          <p>
+            <b>
+              B.P.H Education Society's Ahmednagar College Station Road,
+              Ahmednagar - 414001 Maharashtra, India.
+            </b>
+          </p>
+
+          <p><b>Principal</b>: <%=contact[0].principle%></p>
+          <p><b>Registrar </b>: <%=contact[0].registrar%></p>
+          <p><b>Vice Principal</b>:<%=contact[0].vice_principle%></p>
+          <p><b>Librarian</b>: <%=contact[0].librarian%></p>
+          <p><b>Chief Rector </b>:<%=contact[0].chief_rector%></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 m-0 p-0">
+      <div class="row p-2">
+        <div class="col-md-12">
+          <h2>Office Hours</h2>
+          <div class="line mb-4"></div>
+        </div>
+        <div class="col-md-12">
+          <p><b>Monday To Friday </b></p>
+
+          <p>9.00 am to 2.00 pm</p>
+          <p>3.00 pm to 5.00 pm</p>
+          <p><b>Saturday</b></p>
+          <p>9.00 am to 1.30 pm</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("footer.ejs") %>

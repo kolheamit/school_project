@@ -1,0 +1,71 @@
+<%- include("Navbar.ejs") %>
+
+<form action="/admin/save_faculty_detail" method="post" enctype="multipart/form-data">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bg-secondary shadow">
+        <h1 class="text-white">MANAGE FACULTY</h1>
+      </div>
+      <div class="col-md-4 mt-3">
+        <label for="">  Faculty Name</label>
+        <input type="text" name="faculty_name" class="form-control" />
+      </div>
+      <div class="col-md-4 mt-3">
+        <label for="">  Faculty Designation</label>
+        <input type="text" name="faculty_Designation" class="form-control" />
+      </div>
+      <div class="col-md-4 mt-3">
+        <label for="">  Faculty photo</label>
+       <input type="file" name="faculty_photo" class="form-control">
+      </div>
+      
+    </div>
+    <div class="col-md-12 mt-4 text-center">
+      <button class="btn btn-primary">Save</button>
+    </div>
+  </div>
+</form>
+
+<hr />
+
+<div class="container  ">
+  <div class="row">
+      <div class="col-md-12 bg-secondary shadow" >
+          <h1 class="text-white">FACULTY LIST</h1>
+      </div>
+      <div class="col-md-12 mt-3">
+          <table class="table table-bordered">
+              <tr >
+                  <th>Action</th>
+                  <th>SN</th>
+                  <th>faculty_name</th>
+                  <th>faculty_Designation</th>
+                  <th>faculty_photo</th>
+                  
+              </tr>
+             <% for(var i=0;i<fac_list.length;i++) { %>
+              <tr>
+                   <td style="width: 3%; white-space:nowrap;" >
+                      <a href="/admin/edit_faculty/<%= fac_list[i].faculty_id %>">
+                      <button class="bg-primary "> <i class="fa fa-edit"></i>  </button>
+                  </a>
+                  <a href="/admin/delete_faculty/<%= fac_list[i].faculty_id %>" onclick="return confirm('are u sure')">
+                      <button class="bg-danger"><i class="fa fa-trash"></i>  </button>
+                  </a>
+                   </td>
+                  <td><%=i+1%></td>
+                  <td><%=fac_list[i].faculty_name%></td>
+                  <td><%=fac_list[i].faculty_Designation%></td>
+                  <td>
+              <img src="/images/<%=fac_list[i].faculty_photo%>" width="50px" alt="">
+
+                  </td>
+                 
+              </tr>
+             <% } %>
+          </table>
+      </div>
+      </div>
+</div>
+
+<%- include("Footer.ejs") %>

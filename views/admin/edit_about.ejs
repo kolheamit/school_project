@@ -1,0 +1,49 @@
+<%- include("Navbar.ejs") %>
+
+<form
+  action="/admin/update_about_detail"
+  method="post"
+  enctype="multipart/form-data"
+>
+  <input type="hidden" name="about_id" value="<%=about_data[0].about_id %>" />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bg-secondary shadow">
+        <h1 class="text-white">EDIT ABOUT</h1>
+      </div>
+      <div class="col-md-4 mt-5">
+        <label for=""> Testimonial Name</label>
+        <input
+          type="text"
+          name="testimonial_name"
+          class="form-control"
+          value="<%= about_data[0].testimonial_name %>"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <label for=""> Testimonial Details</label>
+        <input
+          type="text"
+          name="testimonial_details"
+          class="form-control"
+          value="<%= about_data[0].testimonial_details %>"
+        />
+      </div>
+      <div class="col-md-3 mt-5">
+        <label for=""> Testimonial Images</label>
+        <input type="file" name="testimonial_img" class="form-control" />
+      </div>
+      <div class="col-md-2">
+        <img
+          src="/images/<%=about_data[0].testimonial_img%>"
+          alt=""
+          width="60px"
+        />
+      </div>
+      <div class="col-md-12 mt-4 text-center">
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</form>
+<%- include("Footer.ejs") %>

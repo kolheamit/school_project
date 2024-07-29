@@ -1,0 +1,45 @@
+<%- include("Navbar.ejs") %>
+
+<form
+  action="/admin/update_faculty_detail"
+  method="post"
+  enctype="multipart/form-data"
+>
+  <input type="hidden" name="faculty_id" value="<%=fac_info[0].faculty_id %>" />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bg-secondary shadow">
+        <h1 class="text-white">EDIT FACULTY</h1>
+      </div>
+      <div class="col-md-4 mt-5">
+        <label for=""> Faculty Name</label>
+        <input
+          type="text"
+          name="faculty_name"
+          class="form-control"
+          value="<%= fac_info[0].faculty_name %>"
+        />
+      </div>
+      <div class="col-md-4 mt-5">
+        <label for=""> Faculty Designation</label>
+        <input
+          type="text"
+          name="faculty_Designation"
+          class="form-control"
+          value="<%= fac_info[0].faculty_Designation %>"
+        />
+      </div>
+      <div class="col-md-3 mt-5">
+        <label for=""> Faculty photo</label>
+        <input type="file" name="faculty_photo" class="form-control" />
+      </div>
+      <div class="col-md-2">
+        <img src="/images/<%=fac_info[0].faculty_photo%>" alt="" width="60px" />
+      </div>
+      <div class="col-md-12 mt-4 text-center">
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</form>
+<%- include("Footer.ejs") %>

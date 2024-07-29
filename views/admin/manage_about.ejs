@@ -1,0 +1,66 @@
+<%- include("Navbar.ejs") %>
+
+<!-- <form action="/admin/save_about_detail" method="post" enctype="multipart/form-data">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 bg-secondary shadow">
+          <h1 class="text-white">MANAGE ABOUT</h1>
+        </div>
+        <div class="col-md-4 mt-3">
+            <label for="">  Testimonial Img</label>
+           <input type="file" name="testimonial_img" class="form-control">
+          </div>
+        <div class="col-md-4 mt-3">
+          <label for="">  Testimonial Name</label>
+          <input type="text" name="testimonial_name" class="form-control" />
+        </div>
+        <div class="col-md-4 mt-3">
+          <label for="">  Testimonial Details</label>
+          <input type="text" name="testimonial_details" class="form-control" />
+        </div>
+        
+        
+      </div>
+      <div class="col-md-12 mt-4 text-center">
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </form> -->
+
+
+<hr />
+
+<div class="container ">
+  <div class="row">
+      <div class="col-md-12 bg-secondary shadow" >
+          <h1 class="text-white">ABOUT DATA</h1>
+      </div>
+      <div class="col-md-12 mt-3">
+          <table class="table table-bordered">
+              <tr >
+                  <th>Action</th>
+                  <th>SN</th>
+                  <th>Testimonial_img</th>
+                  <th>Testimonial Name</th>
+                  <th>Testimonial Details</th>
+              </tr>
+             <% for(var i=0;i<about_data.length;i++) { %>
+              <tr>
+                   <td style="width: 3%; white-space:nowrap;" >
+                      <a href="/admin/edit_about/<%= about_data[i].about_id %>">
+                      <button class="bg-primary "> <i class="fa fa-edit"></i>  </button>
+                  </a>
+
+                   </td>
+                  <td><%=i+1%></td>
+                  <td><img src="/images/<%=about_data[i].testimonial_img%>" alt="" width="50px"></td>
+                  <td><%=about_data[i].testimonial_name%></td>
+                  <td><%=about_data[i].testimonial_details%></td>
+              </tr>
+             <% } %>
+          </table>
+      </div>
+      </div>
+</div>
+
+<%- include("Footer.ejs") %>

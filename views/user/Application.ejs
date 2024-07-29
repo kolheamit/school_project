@@ -1,0 +1,243 @@
+<%- include("navbar.ejs") %>
+
+<link rel="stylesheet" href="style/index.css" />
+<link rel="stylesheet" href="style/Application.css" />
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- <img src="uploads/FacultyBg.jpg" alt=""> -->
+    <div class="col-md-12 Application1">
+      <img src="uploads/FacultyBg.jpg" alt="" />
+    </div>
+    <div class="col-md-12 Application1-heading">
+      <h1>APPLICATION FOR ADMISSION</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid Application2">
+  <div class="row">
+    <div class="col-md-1 d-md-block d-none"></div>
+    <div class="col-md-4 Application2-left">
+      <p>
+        The 2024-2025 Admissions Lottery application form will open at 12:01
+        a.m. September 1,2023, and close at 11:59 p.m. February 1, 2024. Our
+        School Academy will accept applications for grades 7-12 at our five
+        campuses - Ahilyanagar, Pune, Sambhajinagar, Mumbai-East, Mumbai-North.
+      </p>
+      <p>
+        We will accept Waiting List applications from 12:01 a.m. March 1,2024,
+        and close at 11:59 p.m. July 31, 2024.
+      </p>
+      <p>We look forward to working with you and your prospective scholar!</p>
+      <p>Our shadow A Scholar program is accepting appointments.</p>
+      <p>Questions? Email: <a href="#">OurSchoolAcademy.org</a></p>
+    </div>
+    <div class="col-md-1"></div>
+
+    <div class="col-md-5 Application2-right">
+      <h2>Important Reminders</h2>
+      <ul>
+        <li>
+          The deadline to apply for the 2024-2025 Admissions Lottery drawing is
+          11:59 p.m. February 1, 2024. Waiting List applications will be
+          available March 1- July 31, 2024/
+        </li>
+        <li>
+          Parents/Guardians are responsible for the accuracy of information
+          submitted on the application.
+        </li>
+        <li>
+          This application is valid only for the current(2024-2025) Admissions
+          Lottery cycle, which ends Aug. 1, 2024.
+        </li>
+        <li>
+          Our School Academy does not discriminate on the basis of sex, national
+          origin, race, ethnicity, religion, disability, academic or athletic
+          eligibility. However, a student will be excluded if he or she is
+          currently expelled from another school.
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+<div class="container Application3">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>WAITING LIST FOR APPLICATION FOR ADMISSION 2024-2025</h1>
+    </div>
+    <div class="col-md-12">
+      <h5>Applicant Information</h5>
+      <p>
+        We are accepting Waiting List applications for grades 7-12 at our five
+        campuses. Deadline to apply is July 31,2024. We cannot accept
+        applications for anyone who is not entering grade 7-12 in the 2024-2025
+        school year, Potential applicants who do not currently live in
+        Ahilyanagar must email admission@ourschool.org prior to submitting an
+        application.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-md-12">
+        <div
+          class="card shadow-2-strong card-registration"
+          style="border-radius: 15px"
+        >
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Enrollment Form</h3>
+            <form action="/user/save_data" method="post">
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div data-mdb-input-init class="form-outline">
+                    <input
+                      type="text"
+                      id="firstName"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="firstName">First Name</label>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div data-mdb-input-init class="form-outline">
+                    <input
+                      type="text"
+                      id="lastName"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="lastName">Last Name</label>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div data-mdb-input-init class="form-outline">
+                    <input
+                      type="text"
+                      id="lastName"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="lastName">Last Name</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+                  <div
+                    data-mdb-input-init
+                    class="form-outline datepicker w-100"
+                  >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="birthdayDate"
+                    />
+                    <label for="birthdayDate" class="form-label"
+                      >Birthday</label
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <h6 class="mb-2 pb-1">Gender:</h6>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="femaleGender"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="femaleGender"
+                      >Female</label
+                    >
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="maleGender"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="maleGender"
+                      >Male</label
+                    >
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="otherGender"
+                      value="option3"
+                    />
+                    <label class="form-check-label" for="otherGender"
+                      >Other</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 pb-2">
+                  <div data-mdb-input-init class="form-outline">
+                    <input
+                      type="email"
+                      id="emailAddress"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="emailAddress">Email</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 pb-2">
+                  <div data-mdb-input-init class="form-outline">
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      class="form-control form-control-lg"
+                    />
+                    <label class="form-label" for="phoneNumber"
+                      >Phone Number</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <select class="select form-control-lg">
+                    <option value="1" disabled>Choose class</option>
+                    <option value="2">1 st</option>
+                    <option value="3">2 st</option>
+                    <option value="4">3 st</option>
+                  </select>
+                  <label class="form-label select-label">Choose class</label>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-2">
+                <input
+                  data-mdb-ripple-init
+                  class="btn btn-primary btn-lg"
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include("footer.ejs") %>

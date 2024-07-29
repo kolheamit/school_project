@@ -1,0 +1,196 @@
+/* slide1 begins */
+
+
+
+
+.card-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: black;
+  /* font-family: "Lato"; */
+}
+
+.about-inner-card-img:hover {
+  transform: scale(1.15) !important;
+  transition: 0.3s !important;
+  cursor: pointer !important;
+  /* border:2px solid #fca311;
+  border-radius: 50%; */
+}
+
+.card-text {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  font-family: "arial";
+  line-height: 150%;
+}
+
+.about-inner-card {
+  background: transparent;
+  border: none;
+  width: 15rem;
+  height: 200px;
+  align-items: center;
+  justify-self: center;
+}
+
+.about-inner-card img {
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+
+
+
+.sideline {
+  width: 100px;
+  height: 3px;
+  border-radius: 10px;
+  margin: 0px 0px 10px 10px;
+  background-color: #fca311;
+}
+
+
+
+
+@media (max-width:425px) {
+  .slide1 {
+    max-width: 425px;
+    height: 350px;
+  }
+
+  .slide1 img {
+    max-width: 425px;
+    height: 400px;
+  }
+
+  .slide1-heading {
+    position: relative;
+    left: 0;
+    top: -350px;
+    right: 50;
+    margin-left: 80px;
+  }
+
+  .slide1 h1 {
+    margin-top: 60px;
+    font-size: 35px;
+  }
+
+  /* slide2  */
+  .slide3 {
+    max-width: 410px;
+    height: 900px;
+  }
+
+  .slide3-header h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: -180px;
+    max-width: 350px;
+    line-height: 35px;
+  }
+
+  .slide3-header p {
+    display: none;
+  }
+
+  .slide3-card {
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 70px;
+    height: auto;
+    margin-left: -20px;
+  }
+
+  .about-card1 {
+    margin-left: 10px;
+  }
+
+  .about-card2 {
+    margin-top: -30px;
+    margin-left: 10px;
+  }
+
+  .about-card3 {
+    margin-left: 10px;
+  }
+
+  .about-card4 {
+    margin-left: 10px;
+  }
+
+
+
+
+
+
+}
+
+.card-box {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.card-img-top {
+  width: 55px;
+}
+
+.testimonials {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.testimonials .carousel {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+.testimonials .carousel .carousel-inner {
+  width: 500px;
+
+
+}
+
+.testimonials .carousel .carousel-inner .carousel-item img {
+  width: 210px !important;
+  height: 210px !important;
+  margin-bottom: 150px !important;
+  margin-left: 135px;
+  border-radius: 50%;
+}
+
+.box {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+@media (max-width:425px) {
+  .testimonials .carousel {
+
+    margin-left: 10px;
+
+  }
+
+}

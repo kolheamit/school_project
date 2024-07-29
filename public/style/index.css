@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 7px;
+}
+
+.line {
+  margin-top: 10px;
+  width: 100px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: rgb(255, 146, 4);
+}
+
+h2 {
+  color: #203c90;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase;
+}
+
+.school {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 200px;
+  background: #017acf;
+}
+
+.slide1 {
+  position: relative;
+  top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.slide1 img {
+  box-sizing: border-box;
+  filter: brightness(0.8);
+}

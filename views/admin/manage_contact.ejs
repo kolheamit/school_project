@@ -1,0 +1,67 @@
+<%- include("Navbar.ejs") %>
+
+<form
+  action="/admin/save_contact_detail"
+  method="post"
+  enctype="multipart/form-data"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bg-secondary shadow">
+        <h1 class="text-white">MANAGE CONTACT</h1>
+      </div>
+      <div class="col-md-4 mt-3">
+        <label for=""> Principle</label>
+        <input
+          type="text"
+          name="principle"
+          class="form-control"
+          value="<%=contact[0].principle%>"
+        />
+      </div>
+      <div class="col-md-4 mt-3">
+        <label for=""> Vice-Principle</label>
+        <input
+          type="text"
+          name="vice_principle"
+          class="form-control"
+          value="<%=contact[0].vice_principle%>"
+        />
+      </div>
+      <div class="col-md-4 mt-3">
+        <label for=""> Registrar</label>
+        <input
+          type="text"
+          name="registrar"
+          class="form-control"
+          value="<%=contact[0].registrar%>"
+        />
+      </div>
+      <div class="col-md-4 mt-3">
+        <label for=""> Librarian</label>
+        <input
+          type="text"
+          name="librarian"
+          class="form-control"
+          value="<%=contact[0].librarian%>"
+        />
+      </div>
+      <div class="col-md-4 mt-3">
+        <label for=""> Chief Rector </label>
+        <input
+          type="text"
+          name="chief_rector"
+          class="form-control"
+          value="<%=contact[0].chief_rector%>"
+        />
+      </div>
+    </div>
+    <div class="col-md-12 mt-4 text-center">
+      <button class="btn btn-primary">Save</button>
+    </div>
+  </div>
+</form>
+
+<hr />
+
+<%- include("Footer.ejs") %>

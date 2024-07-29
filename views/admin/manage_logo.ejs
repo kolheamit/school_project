@@ -1,0 +1,25 @@
+<%- include("Navbar.ejs") %>
+
+<form action="/admin/save_logo" method="post" enctype="multipart/form-data">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bg-secondary shadow">
+        <h1 class="text-white">MANAGE LOGO</h1>
+      </div>
+      <div class="col-md-4 mt-4">
+        <label for="">Logo</label>
+        <input type="file" name="logo" class="form-control" required />
+      </div>
+      <div class="col-md-2 mt-4">
+        <img src="/images/<%=logo[0].logo%>" alt="" width="100px" />
+      </div>
+    </div>
+    <div class="col-md-12 mt-5 text-center">
+      <button class="btn btn-primary">Save</button>
+    </div>
+  </div>
+</form>
+
+<hr />
+
+<%- include("Footer.ejs") %>
